@@ -40,7 +40,7 @@ function linterp(x1,y1,x2)
 		error('range of x2 should be included in range of x1')
 	end
 	for i=1,x2:nElement() do
-		local indx = torch.find(torch.le(x1,x2[i]))
+		local indx = torch.find1d(torch.le(x1,x2[i]))
 		local j = torch.max(indx)
 		if j == x1:nElement() then
 			y2[i] = y1[x1:nElement()]
@@ -54,9 +54,9 @@ end
 
 		
 		
-function torch.find(x)
+function torch.find1d(x)
    if x:nDimension() > 1 then
-		error('torch.find is only defined for 1D tensors')
+		error('torch.find1d is only defined for 1D tensors')
 	end
    local indx={}
    for i=1,(#x)[1] do

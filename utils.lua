@@ -109,9 +109,9 @@ function torch.intersect(a,b)
 end
 
 -- returns the indices of non-zero elements of a 1D tensor 
-function torch.find(x)
+function torch.find1d(x)
    if x:nDimension() > 1 then
-		error('torch.find is only defined for 1D tensors')
+		error('torch.find1d is only defined for 1D tensors')
 	end
    local indx={}
    for i=1,(#x)[1] do
