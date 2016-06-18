@@ -1,3 +1,13 @@
+# spectral-lib
+
+`spectral-lib` provides Torch7 wrappers for CuFFT including FFT1d batch version. 
+
+### Revision History
+
+* change function name of `torch.find` to `torch.find1d` to avoid a conflict with `torch.find` of package `torchx` (v0.1).
+
+======================
+
 You are welcome to use this code for research purposes but it is not actively supported. 
 
 Here are some pointers on getting it to work:
