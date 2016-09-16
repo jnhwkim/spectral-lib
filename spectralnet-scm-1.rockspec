@@ -1,7 +1,7 @@
 package = "spectralnet"
 version = "scm-1"
 source = {
-   url = "..." --TODO
+   url = "." --TODO
 }
 description = {
    summary = "Spectral network library",
